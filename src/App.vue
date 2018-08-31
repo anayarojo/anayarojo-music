@@ -4,6 +4,7 @@
     h1 Anaya Rojo Music
     select(v-model="selectedCountry")
       option(v-for="country in countries" :value="country.value") {{ country.name }}
+    //combo(:selected="selectedCountry" :options="countries")
     spinner(v-show="loading")
     ul
       artist(v-for="artist in artists" :artist="artist" :key="artist.mbid")
@@ -13,6 +14,7 @@
 
 import Artist from './components/Artist';
 import Spinner from './components/Spinner';
+//import Combo from './components/Combo';
 import getTopArtists from './api';
 
 export default {
@@ -33,6 +35,7 @@ export default {
   components: {
     Artist: Artist,
     Spinner: Spinner,
+    //Combo: Combo,
   },
   methods:{
     refreshArtists: function(){
