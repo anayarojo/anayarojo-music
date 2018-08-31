@@ -1,6 +1,6 @@
-# anayarojo-music
+# Anaya Rojo Music
 
-> Simple platform for enjoy music.
+> Plataforma básica de musica hecha utilizando Vue
 
 ## Build Setup
 
